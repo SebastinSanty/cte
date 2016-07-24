@@ -4,6 +4,19 @@
 	<title>CTE main page</title>
 </head>
 <body>
-<h1>Hello</h1>
+{% if not request.user.is_authenticated %}
+    <a href="{% url 'social:begin' 'google-oauth2' %}">
+        <i class="fa fa-facebook"></i> Login with Google
+      </a>
+      {% endif %}
+ 
+{% if request.user.is_authenticated %}
+     {{ request.user.email }} <br>
+     {{ request.user.name }} <br> 
+     {{ request.user.id }}<br> 
+   <a href="/logout">
+      <button type="submit" value = "lo" class="btn btn-primary" name = "logout">Log out</button>
+     </a>
+{% endif %}
 </body>
 </html>
