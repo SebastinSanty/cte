@@ -3,13 +3,6 @@ from .models import Profile
 from django.contrib.auth.models import User
 from registration.forms import RegistrationForm
 
-class LoginForm(forms.Form):
-        username = forms.CharField(max_length = 20)
-        password = forms.CharField(widget=forms.PasswordInput)
-        widgets = {
-            'password': forms.PasswordInput(),
-        }
-
 class EmailDomainFilterRegistrationForm(RegistrationForm):
 
     def clean_email(self):
@@ -23,6 +16,6 @@ class EmailDomainFilterRegistrationForm(RegistrationForm):
         # logger.debug(domain)
         if domain not in ALLOWED_DOMAINS:
             raise forms.ValidationError(
-                u'Please register using your BITSmail (...@goa.bits-pilani.ac.in)'
+                u'Please register using your BITSmail (@goa.bits-pilani.ac.in)'
             )
         return submitted_data

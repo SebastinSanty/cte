@@ -1,7 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 from home.forms import EmailDomainFilterRegistrationForm
-from registration.views import RegistrationView
+from registration.backends.default.views import RegistrationView
 
 urlpatterns = [
     # Examples:
@@ -13,4 +13,6 @@ urlpatterns = [
     url(r'^register/$',
     RegistrationView.as_view(form_class=EmailDomainFilterRegistrationForm),
     name='registration_register'),
+    url(r'^tinymce/', include('tinymce.urls')),
+     url(r'^courses/$', 'course.views.Courses', name='courses'),
 ]

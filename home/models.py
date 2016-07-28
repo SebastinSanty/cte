@@ -9,6 +9,7 @@ class Profile(models.Model):
 	timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
 	email = models.EmailField()
 	student_mobile = models.CharField(max_length = 10)
+	year = models.CharField(max_length = 10)
 
 	def __str__(self):
 		return self.full_name
