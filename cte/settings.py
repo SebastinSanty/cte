@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 from .passsec import *
+import django
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'flat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,6 +83,8 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader')
+
 WSGI_APPLICATION = 'cte.wsgi.application'
 
 
@@ -113,6 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static", "assets"),
