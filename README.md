@@ -2,12 +2,13 @@
 
 ##Setup Instructions
 
-1. Setup Python Virtual Environment (virtualenv): `virtualenv erp` .
-2. Go into the Virtual Enviroment: `cd erp`
+1. Setup Python Virtual Environment (virtualenv): `virtualenv cte` .
+2. Go into the Virtual Enviroment: `cd cte`
 3. Activate virtualenv: `source bin/activate`
 4. Clone this repository: `git clone <url of repo> cte`
 5. Go into the cloned repository: `cd cte`
-7. Webserver runs for default on `localhost:8000`. To set the port manually run `python manage.py runserver 8080` for `localhost:8080`
+6. Run the server using `python manage.py runserver`
+7. Webserver runs for default on `localhost:8000`.
 
 ##Login Credentials
 1. Admin panel at: `localhost:8000/admin`. Username for admin: `admin`. Password: `123`
