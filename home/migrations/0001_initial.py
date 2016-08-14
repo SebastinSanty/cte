@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Profile',
             fields=[
-                ('id', models.AutoField(auto_created=True, verbose_name='ID', primary_key=True, serialize=False)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
+                ('pic', models.ImageField(upload_to='')),
                 ('bits_id', models.CharField(max_length=12)),
                 ('full_name', models.CharField(max_length=120)),
                 ('timestamp', models.DateTimeField(auto_now_add=True)),

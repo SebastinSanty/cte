@@ -520,13 +520,26 @@
 	"buffers":
 	[
 		{
-			"contents": "{% load staticfiles %}\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>\n        {% block title %}\n        {% endblock %}\n    </title>\n\n    {% include 'head_css.html' %}\n\n    \n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n        <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n\n<body>\n\n    <div id=\"wrapper\">\n\n        <!-- Navigation -->\n        <nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                    <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand\" href=\"index.html\"><strong>Center For Technical Education,</strong> <small>BITS Pilani, K.K. Birla Goa Campus</small></a>\n            </div>\n            <!-- Top Menu Items -->\n            <ul class=\"nav navbar-right top-nav\">\n                \n                   <!--  <ul class=\"dropdown-menu message-dropdown\">\n                        <li class=\"message-preview\">\n                            <a href=\"#\">\n                                <div class=\"media\">\n                                    <span class=\"pull-left\">\n                                        <img class=\"media-object\" src=\"http://placehold.it/50x50\" alt=\"\">\n                                    </span>\n                                    <div class=\"media-body\">\n                                        <h5 class=\"media-heading\">\n                                            <strong>John Smith</strong>\n                                        </h5>\n                                        <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>\n                                    </div>\n                                </div>\n                            </a>\n                        </li>\n                        <li class=\"message-preview\">\n                            <a href=\"#\">\n                                <div class=\"media\">\n                                    <span class=\"pull-left\">\n                                        <img class=\"media-object\" src=\"http://placehold.it/50x50\" alt=\"\">\n                                    </span>\n                                    <div class=\"media-body\">\n                                        <h5 class=\"media-heading\">\n                                            <strong>John Smith</strong>\n                                        </h5>\n                                        <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>\n                                    </div>\n                                </div>\n                            </a>\n                        </li>\n                        <li class=\"message-preview\">\n                            <a href=\"#\">\n                                <div class=\"media\">\n                                    <span class=\"pull-left\">\n                                        <img class=\"media-object\" src=\"http://placehold.it/50x50\" alt=\"\">\n                                    </span>\n                                    <div class=\"media-body\">\n                                        <h5 class=\"media-heading\">\n                                            <strong>John Smith</strong>\n                                        </h5>\n                                        <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>\n                                    </div>\n                                </div>\n                            </a>\n                        </li>\n                        <li class=\"message-footer\">\n                            <a href=\"#\">Read All New Messages</a>\n                        </li>\n                    </ul>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-bell\"></i> <b class=\"caret\"></b></a>\n                    <ul class=\"dropdown-menu alert-dropdown\">\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-default\">Alert Badge</span></a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-primary\">Alert Badge</span></a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-success\">Alert Badge</span></a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-info\">Alert Badge</span></a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-warning\">Alert Badge</span></a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Alert Name <span class=\"label label-danger\">Alert Badge</span></a>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <a href=\"#\">View All</a>\n                        </li>\n                    </ul> -->\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-user\"></i> John Smith <b class=\"caret\"></b></a>\n                    <ul class=\"dropdown-menu\">\n                        <li>\n                            <a href=\"#\"><i class=\"fa fa-fw fa-gear\"></i> Settings</a>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <a href=\"#\"><i class=\"fa fa-fw fa-power-off\"></i> Log Out</a>\n                        </li>\n                    </ul>\n                </li>\n            </ul>\n            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->\n            <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n                <ul class=\"nav navbar-nav side-nav\">\n                    <li>\n                        <a href=\"index.html\"><i class=\"fa fa-fw fa-dashboard\"></i> Profile</a>\n                    </li>\n                    <li>\n                        <a href=\"charts.html\"><i class=\"fa fa-fw fa-bar-chart-o\"></i> Courses</a>\n                    </li>\n                    <li>\n                        <a href=\"tables.html\"><i class=\"fa fa-fw fa-table\"></i> Registered Courses</a>\n                    </li>\n                    <li>\n                        <a href=\"forms.html\"><i class=\"fa fa-fw fa-edit\"></i> Support Team</a>\n                    </li>\n                     <!-- <li>\n                        <a href=\"javascript:;\" data-toggle=\"collapse\" data-target=\"#demo\"><i class=\"fa fa-fw fa-arrows-v\"></i> Dropdown <i class=\"fa fa-fw fa-caret-down\"></i></a>\n                        <ul id=\"demo\" class=\"collapse\">\n                            <li>\n                                <a href=\"#\">Dropdown Item</a>\n                            </li>\n                            <li>\n                                <a href=\"#\">Dropdown Item</a>\n                            </li>\n                        </ul>\n                    </li>\n                    <li class=\"active\">\n                        <a href=\"blank-page.html\"><i class=\"fa fa-fw fa-file\"></i> Blank Page</a>\n                    </li>\n                    <li>\n                        <a href=\"index-rtl.html\"><i class=\"fa fa-fw fa-dashboard\"></i> RTL Dashboard</a>\n                    </li> -->\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </nav>\n\n        <div id=\"page-wrapper\">\n\n            <div class=\"container-fluid\">\n\n                <!-- Page Heading -->\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <h1 class=\"page-header\">\n                            {% block heading %}\n                            {% endblock %}\n                            <!-- <small>Subheading</small> -->\n                        </h1>\n                        <ol class=\"breadcrumb\">\n                            <li>\n                                <i class=\"fa fa-dashboard\"></i>  <a href=\"index.html\">Dashboard</a>\n                            </li>\n                            <li class=\"active\">\n                                <i class=\"fa fa-file\"></i> Blank Page\n                            </li>\n                        </ol>\n                        {% block content %}\n                        {% endblock %}\n                    </div>\n                </div>\n                <!-- /.row -->\n\n            </div>\n            <!-- /.container-fluid -->\n\n        </div>\n        <!-- /#page-wrapper -->\n\n    </div>\n    <!-- /#wrapper -->\n    {% include \"javascript.html\" %}\n\n\n</body>\n\n</html>\n",
-			"file": "templates/reg_base.html",
-			"file_size": 9957,
-			"file_write_time": 131141267050000000,
+			"file": "cte/settings.py",
 			"settings":
 			{
-				"buffer_size": 9957,
+				"buffer_size": 3637,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 20320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/dashboard.html",
+			"settings":
+			{
+				"buffer_size": 220,
 				"line_ending": "Unix"
 			}
 		},
@@ -534,7 +547,15 @@
 			"file": "templates/courses.html",
 			"settings":
 			{
-				"buffer_size": 168,
+				"buffer_size": 866,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home/models.py",
+			"settings":
+			{
+				"buffer_size": 538,
 				"line_ending": "Unix"
 			}
 		},
@@ -542,159 +563,15 @@
 			"file": "course/models.py",
 			"settings":
 			{
-				"buffer_size": 1475,
+				"buffer_size": 1537,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "course/admin.py",
+			"file": "home/admin.py",
 			"settings":
 			{
-				"buffer_size": 131,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "cte/settings.py",
-			"settings":
-			{
-				"buffer_size": 3483,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/base_site.html",
-			"settings":
-			{
-				"buffer_size": 339,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "course/views.py",
-			"settings":
-			{
-				"buffer_size": 217,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/registration_form.html",
-			"settings":
-			{
-				"buffer_size": 454,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 5,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/registration_complete.html",
-			"settings":
-			{
-				"buffer_size": 148,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_reset_form.html",
-			"settings":
-			{
-				"buffer_size": 407,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_reset_done.html",
-			"settings":
-			{
-				"buffer_size": 187,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_reset_confirm.html",
-			"settings":
-			{
-				"buffer_size": 306,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_reset_complete.html",
-			"settings":
-			{
-				"buffer_size": 198,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_change_form.html",
-			"settings":
-			{
-				"buffer_size": 215,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/password_change_done.html",
-			"settings":
-			{
-				"buffer_size": 119,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/logout.html",
-			"settings":
-			{
-				"buffer_size": 237,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/login.html",
-			"settings":
-			{
-				"buffer_size": 621,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/assets/css/style-content.css",
-			"settings":
-			{
-				"buffer_size": 1206,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/activation_complete.html",
-			"settings":
-			{
-				"buffer_size": 146,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/activate.html",
-			"settings":
-			{
-				"buffer_size": 130,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/registration/registration_closed.html",
-			"settings":
-			{
-				"buffer_size": 137,
+				"buffer_size": 122,
 				"line_ending": "Unix"
 			}
 		},
@@ -702,31 +579,7 @@
 			"file": "cte/urls.py",
 			"settings":
 			{
-				"buffer_size": 763,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/javascript.html",
-			"settings":
-			{
-				"buffer_size": 541,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "home/views.py",
-			"settings":
-			{
-				"buffer_size": 119,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/head_css.html",
-			"settings":
-			{
-				"buffer_size": 1228,
+				"buffer_size": 829,
 				"line_ending": "Unix"
 			}
 		}
@@ -770,19 +623,42 @@
 	[
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration"
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static/assets"
 	],
 	"file_history":
 	[
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/views.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/views.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/courses.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/models.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/admin.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/settings.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/base_site.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/registration_form.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/README.md",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/.gitignore",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/registration_complete.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_reset_form.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_reset_done.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_reset_confirm.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_reset_complete.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_change_form.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/password_change_done.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/logout.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/login.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static/assets/css/style-content.css",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/activation_complete.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/activate.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/registration_closed.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/urls.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/javascript.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/head_css.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/reg_base.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/models.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/passsec.py",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/views.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/home.html",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/urls.py",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/.gitignore",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/settings.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/navbar.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/forms.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/pass.py",
@@ -880,30 +756,7 @@
 		"/Users/sebastinsanty/Downloads/link.cpp",
 		"/Users/sebastinsanty/Downloads/about.html",
 		"/Users/jmitch/Desktop/delete.py",
-		"/Users/jmitch/Desktop/drf/src/comments/views.py",
-		"/Users/jmitch/Desktop/drf/src/accounts/models.py",
-		"/Users/jmitch/Desktop/drf/src/comments/permissions.py",
-		"/Users/jmitch/Desktop/drf/src/videos/permissions.py",
-		"/Users/jmitch/Desktop/drf/src/videos/views.py",
-		"/Users/jmitch/Desktop/drf/src/jquery_test/installation.txt",
-		"/Users/jmitch/Desktop/jquery_test/index.html",
-		"/Users/jmitch/Desktop/jquery_test.html",
-		"/Users/jmitch/Desktop/drf/src/videos/serializers.py",
-		"/Users/jmitch/Desktop/drf/src/srvup/views.py",
-		"/Users/jmitch/Desktop/drf/src/srvup/urls.py",
-		"/Users/jmitch/Desktop/drf/src/srvup/utils.py",
-		"/Users/jmitch/Desktop/drf/src/videos/models.py",
-		"/Users/jmitch/Desktop/30daysofdjango/5_loops.py",
-		"/Users/jmitch/Desktop/30daysofdjango/5_loops",
-		"/Users/jmitch/Desktop/xpytests/sub.py",
-		"/Users/jmitch/Desktop/30daysofdjango/3_math.py",
-		"/Users/jmitch/Desktop/30daysofdjango/2_strings.py",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/templates/pdfs/tm_details_download.html",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/accounts/admin.py",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/templates/team/home.html",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/templates/team/documents.html",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/kpj/settings/local.py",
-		"/Volumes/My Passport/Dropbox/projects/kpj/kpj/kpj/__init__.py"
+		"/Users/jmitch/Desktop/drf/src/comments/views.py"
 	],
 	"find":
 	{
@@ -923,6 +776,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"donut",
+			"sales",
+			"dales",
+			"ales",
+			"conten",
+			"cont",
+			"pages/widgets.html",
+			"dashb",
+			"avail",
+			"dash",
+			"avail",
+			"|",
+			"2014",
+			"{{",
+			"lt",
+			"online",
+			"alexander",
+			"label-suc",
+			"/section",
+			"send",
+			"control",
+			"dashboard",
+			"admin",
+			"layout opti",
+			"layout",
+			"erp",
 			"WAVES",
 			"bitsmun",
 			"BITS",
@@ -1024,33 +903,7 @@
 			"transcriptContainer",
 			"transcript",
 			"toggleTrans",
-			"print",
-			"video",
-			"remove",
-			"update",
-			"remove",
-			"url",
-			"hash",
-			"verbose_name",
-			"height",
-			"top",
-			"view",
-			"transcript",
-			"<i",
-			"fa",
-			"transcriptText",
-			"questions",
-			"span",
-			"transcript",
-			":",
-			"currentTime",
-			"cookie",
-			"current",
-			"updated",
-			"questions",
-			"krtoor6jqe",
-			"block",
-			"#wistia"
+			"print"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1078,139 +931,24 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/reg_base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8126,
-								8126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/courses.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								153,
-								153
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "course/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1475,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								809,
-								809
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "course/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 131,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								131,
-								131
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "cte/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3483,
+						"buffer_size": 3637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2610,
-								2610
+								3437,
+								3437
 							]
 						],
 						"settings":
@@ -1220,335 +958,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 893.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/base_site.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 339,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "course/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/registration/registration_form.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								109
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "README.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1385.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "templates/registration/registration_complete.html",
+					"buffer": 1,
+					"file": "templates/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 148,
+						"buffer_size": 20320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								11268,
+								11274
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3906.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "templates/registration/password_reset_form.html",
+					"buffer": 2,
+					"file": "templates/dashboard.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 407,
+						"buffer_size": 220,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "templates/registration/password_reset_done.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 187,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "templates/registration/password_reset_confirm.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "templates/registration/password_reset_complete.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 198,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "templates/registration/password_change_form.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "templates/registration/password_change_done.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "templates/registration/logout.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
+								55,
+								46
 							]
 						],
 						"settings":
@@ -1563,25 +1023,56 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "templates/registration/login.html",
+					"buffer": 3,
+					"file": "templates/courses.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 621,
+						"buffer_size": 866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								475,
+								475
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "home/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1591,82 +1082,54 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "static/assets/css/style-content.css",
+					"buffer": 5,
+					"file": "course/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1206,
+						"buffer_size": 1537,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1009,
-								1009
+								865,
+								865
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 452.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
-					"file": "templates/registration/activation_complete.html",
+					"buffer": 6,
+					"file": "home/admin.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 146,
+						"buffer_size": 122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								60,
+								60
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "templates/registration/activate.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1676,48 +1139,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
-					"file": "templates/registration/registration_closed.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 137,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
+					"buffer": 7,
 					"file": "cte/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 763,
+						"buffer_size": 829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								825,
+								825
 							]
 						],
 						"settings":
@@ -1730,93 +1165,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "templates/javascript.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 541,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								541,
-								541
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "home/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "templates/head_css.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								630,
-								630
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1881,7 +1230,7 @@
 		[
 			[
 				"",
-				"~/Desktop/CS/Work/erp/erp.sublime-project"
+				"~/Desktop/CS/Python/Django/swd/swd.sublime-project"
 			]
 		],
 		"width": 380.0

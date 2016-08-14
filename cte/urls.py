@@ -14,5 +14,6 @@ urlpatterns = [
     RegistrationView.as_view(form_class=EmailDomainFilterRegistrationForm),
     name='registration_register'),
     url(r'^tinymce/', include('tinymce.urls')),
-     url(r'^courses/$', 'course.views.Courses', name='courses'),
+    url(r'^courses/$', 'course.views.Courses', name='courses'),
+    url(r'^dashboard/', 'home.views.dashboard', name='dashboard') 
 ]

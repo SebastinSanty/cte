@@ -118,18 +118,21 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "assets")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static", "assets"),
     # '/var/www/static/',
 ]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static","media")
 
+#registration redux
 ACCOUNT_ACTIVATION_DAYS = 3
 REGISTRATION_EMAIL_HTML = True
 REGISTRATION_AUTO_LOGIN = True
+LOGIN_REDIRECT_URL = "/dashboard/"
 
-
-
+#crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap3'

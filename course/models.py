@@ -13,12 +13,12 @@ COURSE_TYPES = (
 # Create your models here.
 class Course(models.Model):
 	title = models.CharField(max_length = 50)
-	desc = models.CharField(max_length = 150)
+	desc = models.CharField(max_length = 300)
 	code = models.CharField(max_length = 10)
 	handout = models.FileField(upload_to = "adminuploads/courses/handouts/" , blank=False)
 	image = models.ImageField(upload_to = "adminuploads/courses/images/" , blank=True, null=True)
 	category = models.CharField(max_length = 50, choices = COURSE_TYPES)
-	subcategory = models.CharField(max_length = 50)
+	subcategory = models.CharField(max_length = 50, default = '')
 
 	def __str__(self):
 		return self.title
@@ -28,7 +28,7 @@ class Mentors(models.Model):
 	mentor = models.ForeignKey(User, related_name = "mentor", on_delete = models.CASCADE)
 
 	def __str__(self):
-		return self.course
+		return (self.course.title + " | " + self.mentor.profile.full_name)
 
 class Module(models.Model):
 	course = models.ForeignKey(Course, related_name = "modulecourse", on_delete = models.CASCADE)
