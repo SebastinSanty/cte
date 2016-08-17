@@ -19,19 +19,28 @@ class Course(models.Model):
 	image = models.ImageField(upload_to = "adminuploads/courses/images/" , blank=True, null=True)
 	category = models.CharField(max_length = 50, choices = COURSE_TYPES)
 	subcategory = models.CharField(max_length = 50, default = '')
+	slack = models.URLField()
 
 	def __str__(self):
 		return self.title
 
 class Mentors(models.Model):
 	course = models.ForeignKey(Course, related_name = "mentorcourse", on_delete = models.CASCADE)
-	mentor = models.ForeignKey(User, related_name = "mentor", on_delete = models.CASCADE)
+	mentor = models.ForeignKey(User, related_name = "coursementor", on_delete = models.CASCADE)
 
 	def __str__(self):
 		return (self.course.title + " | " + self.mentor.profile.full_name)
 
+class Students(models.Model):
+	course = models.ForeignKey(Course, related_name = "studentcourse", on_delete = models.CASCADE)
+	student = models.ForeignKey(User, related_name = "coursestudent", on_delete = models.CASCADE)
+
+	def __str__(self):
+		return (self.course.title + " | " + self.student.profile.full_name)
+
 class Module(models.Model):
 	course = models.ForeignKey(Course, related_name = "modulecourse", on_delete = models.CASCADE)
+	number = models.IntegerField()
 	title = models.CharField(max_length = 50)
 	desc = models.CharField(max_length = 150)
 	instr = HTMLField()

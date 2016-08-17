@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}
+{{ u.title }}
+{% endblock %}
+
+{% block content %}
+<div style="align:center; text-align: center">
+<h2>{{ u.title }}</h2><br>
+<h4>{{ u.desc }}</h4>
+<h4><strong>Mentors</strong></h4>
+{% for k in u.mentorcourse.all %}
+<h4>{{ k.mentor.profile.full_name }}</h4>
+              {% endfor %}
+              <a href="/courses/"><button type="button" class="btn btn-default pull-left"><i class="fa fa-arrow-left"></i> Back</button></a>
+              <form method = "post">
+              {% csrf_token %}
+              {% if reg == True %}
+              <input type="submit" class="btn btn-danger pull-right" name = "deregister" value = "Deregister">
+              {% else %}
+              <input type="submit" class="btn btn-success pull-right" name = "register" value = "Register">
+              {% endif %}
+              </form>
+</div>
+{% endblock %}

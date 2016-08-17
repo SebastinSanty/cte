@@ -13,18 +13,26 @@ Courses
             <div class="box-header">
               <i class="ion ion-clipboard"></i>
 
-              <h3 class="box-title">{{ i.title }}</h3>
+              <h3 class="box-title">{{ i.title }} ({{ i.code }})</h3>
+
 
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-            <img src = "/media/{{ i.image }}">
-              <p>{{ MEDIA_URL }}{{ i.image }}</p>
-              <p>Hello</p>
+            <ul class="tags">
+            <li><a href="#" class="tag">{{ i.category }}</a></li>
+            <li><a href="#" class="tag">{{ i.subcategory }}</a></li>
+            </ul>
+            <p>{{ i.desc }}</p>
+            <p><strong>Mentors:</strong>
+              {% for k in i.mentorcourse.all %}
+              {{ k.mentor.profile.full_name }},
+              {% endfor %}
+            </p>
             </div>
             <!-- /.box-body -->
             <div class="box-footer clearfix no-border">
-              <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Register</button>
+              <a href="/courses/{{ i.code }}"><button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> More</button></a>
             </div>
           </div>
  </section>

@@ -15,5 +15,7 @@ urlpatterns = [
     name='registration_register'),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^courses/$', 'course.views.Courses', name='courses'),
+    url(r'^courses/(.*)/$', 'course.views.Coursereg', name='coursereg'),
+    url(r'^course/(.*)/$', 'course.views.Coursepage', name='coursepage'),
     url(r'^dashboard/', 'home.views.dashboard', name='dashboard') 
 ]

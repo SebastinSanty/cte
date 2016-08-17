@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Courses
+{% endblock %}
+
+{% block content %}
+<h2>{{ i.title }}</h2>
+<!-- <h1>{{ i.code }}</h1>
+<p>{{ i.desc }}</p> -->
+<hr>
+ <section class="col-lg-12 connectedSortable">
+ <div class="box box-primary">
+            <div class="box-header">
+              <i class="fa fa-comments"></i>
+              <h3 class="box-title">Message Forum</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+            <p>Slack: <a href = "{{ u.slack }}" target = "_blank">Message here</a></p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+ </section>
+
+{% for k in mod %}
+<section class="col-lg-12 connectedSortable">
+ <div class="box box-primary">
+            <div class="box-header">
+              <i class="fa fa-comments"></i>
+              <h3 class="box-title">Module {{ k.number }} : {{ k.title }}</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+            <p>{{ k.instr|safe }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+ </section>
+{% endfor %}
+
+{% endblock %}

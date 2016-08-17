@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "cte/settings.py",
+			"file": "templates/courses.html",
 			"settings":
 			{
-				"buffer_size": 3637,
+				"buffer_size": 1186,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,31 +531,15 @@
 			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 20320,
+				"buffer_size": 21671,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/dashboard.html",
+			"file": "course/views.py",
 			"settings":
 			{
-				"buffer_size": 220,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/courses.html",
-			"settings":
-			{
-				"buffer_size": 866,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "home/models.py",
-			"settings":
-			{
-				"buffer_size": 538,
+				"buffer_size": 884,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,23 +547,23 @@
 			"file": "course/models.py",
 			"settings":
 			{
-				"buffer_size": 1537,
+				"buffer_size": 1856,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "home/admin.py",
+			"file": "templates/coursereg.html",
 			"settings":
 			{
-				"buffer_size": 122,
+				"buffer_size": 886,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "cte/urls.py",
+			"file": "cte/settings.py",
 			"settings":
 			{
-				"buffer_size": 829,
+				"buffer_size": 3614,
 				"line_ending": "Unix"
 			}
 		}
@@ -623,18 +607,22 @@
 	[
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static/assets"
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/static/assets",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates"
 	],
 	"file_history":
 	[
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/admin.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/urls.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/models.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/admin.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/models.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/settings.py",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/dashboard.html",
+		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/index.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/views.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/views.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/courses.html",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/models.py",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/course/admin.py",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/settings.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/base_site.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/registration_form.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/README.md",
@@ -652,11 +640,9 @@
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/activation_complete.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/activate.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/registration/registration_closed.html",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/urls.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/javascript.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/head_css.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/reg_base.html",
-		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/home/models.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/cte/passsec.py",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/home.html",
 		"/Users/sebastinsanty/Desktop/CS/Work/CTE/cte/src/templates/navbar.html",
@@ -753,10 +739,7 @@
 		"/Users/sebastinsanty/Desktop/CS/C/tryout.c",
 		"/Users/sebastinsanty/Desktop/Quark/Backend Features",
 		"/Users/sebastinsanty/Desktop/Quark/QSTP ideas",
-		"/Users/sebastinsanty/Downloads/link.cpp",
-		"/Users/sebastinsanty/Downloads/about.html",
-		"/Users/jmitch/Desktop/delete.py",
-		"/Users/jmitch/Desktop/drf/src/comments/views.py"
+		"/Users/sebastinsanty/Downloads/link.cpp"
 	],
 	"find":
 	{
@@ -776,6 +759,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"chart",
+			"regis",
+			"bits",
+			"almas",
+			"alma",
+			"eee",
 			"donut",
 			"sales",
 			"dales",
@@ -897,13 +886,7 @@
 			"Lecture",
 			"User",
 			"Lecture",
-			"reply",
-			"min-height",
-			"transcriptText",
-			"transcriptContainer",
-			"transcript",
-			"toggleTrans",
-			"print"
+			"reply"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -931,37 +914,37 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "cte/settings.py",
+					"file": "templates/courses.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3637,
+						"buffer_size": 1186,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3437,
-								3437
+								730,
+								838
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1385.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -970,15 +953,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20320,
+						"buffer_size": 21671,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11268,
-								11274
+								11374,
+								11374
 							]
 						],
 						"settings":
@@ -988,91 +971,92 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3906.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "templates/dashboard.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								55,
-								46
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "templates/courses.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								475,
-								475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3576.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "home/models.py",
+					"buffer": 2,
+					"file": "course/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 538,
+						"buffer_size": 884,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								490,
-								490
+								791,
+								883
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "course/models.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 35.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/coursereg.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								653,
+								653
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1083,76 +1067,19 @@
 				},
 				{
 					"buffer": 5,
-					"file": "course/models.py",
+					"file": "cte/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1537,
+						"buffer_size": 3614,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								865,
-								865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "home/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 122,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "cte/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 829,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								825,
-								825
+								300,
+								300
 							]
 						],
 						"settings":
@@ -1162,10 +1089,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1336.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1230,7 +1157,7 @@
 		[
 			[
 				"",
-				"~/Desktop/CS/Python/Django/swd/swd.sublime-project"
+				"~/Desktop/CS/Work/bitsmun/bitsmun.sublime-project"
 			]
 		],
 		"width": 380.0

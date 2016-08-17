@@ -254,10 +254,19 @@
             <i class="fa fa-th"></i> <span>Common Forum</span>
           </a>
         </li>
-        <li>
+        <li class="treeview">
           <a href="#">
-            <i class="fa fa-th"></i> <span>Registered Courses</span>
+            <i class="fa fa-pie-chart"></i>
+            <span>My Course</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+          {% for i in request.user.coursestudent.all %}
+            <li><a href="/course/{{ i.code }}/"><i class="fa fa-circle-o"></i>{{ i.course }}</a></li>
+          {% endfor %}
+          </ul>
         </li>
         <li>
           <a href="#">
@@ -284,7 +293,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.6
     </div>
-    <strong>Copyright &copy; 2016 <a href="http://almsaeedstudio.com">BITS Pilani, </a>.</strong> All rights
+    <strong>Copyright &copy; 2016 <a href="http://www.bits-pilani.ac.in/Goa/">BITS Pilani, </a>.</strong> All rights
     reserved.
   </footer>
 
@@ -483,6 +492,68 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
+
+<style type="text/css">
+            
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #777;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: #5DA4D9;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: #5DA4D9; 
+}
+        </style>
+
 
 <!-- jQuery 2.2.3 -->
 <script src="{% static 'plugins/jQuery/jquery-2.2.3.min.js' %}"></script>
