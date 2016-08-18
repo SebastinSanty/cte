@@ -2,6 +2,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from home.forms import EmailDomainFilterRegistrationForm
 from registration.backends.default.views import RegistrationView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # Examples:
@@ -17,5 +19,10 @@ urlpatterns = [
     url(r'^courses/$', 'course.views.Courses', name='courses'),
     url(r'^courses/(.*)/$', 'course.views.Coursereg', name='coursereg'),
     url(r'^course/(.*)/$', 'course.views.Coursepage', name='coursepage'),
-    url(r'^dashboard/', 'home.views.dashboard', name='dashboard') 
+    url(r'^dashboard/$', 'home.views.dashboard', name='dashboard'),
+    url(r'^profile/$', 'home.views.profile', name='profile'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

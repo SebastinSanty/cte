@@ -8,6 +8,7 @@
 <div style="align:center; text-align: center">
 <h2>{{ u.title }}</h2><br>
 <h4>{{ u.desc }}</h4>
+<img src = "{{ MEDIA_URL }}{{ u.image }}">
 <h4><strong>Mentors</strong></h4>
 {% for k in u.mentorcourse.all %}
 <h4>{{ k.mentor.profile.full_name }}</h4>
