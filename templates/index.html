@@ -293,6 +293,10 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    {% block header %}
+    {% endblock %}
+    </section>
+    <section class="content">  
       {% block content %}
       
       {% endblock %}

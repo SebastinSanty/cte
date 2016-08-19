@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
+import os
 
 COURSE_TYPES = (
 	(u'Electronics',u'Electronics'),
@@ -48,4 +49,15 @@ class Module(models.Model):
 
 	def __str__(self):
 		return self.title
+
+	def typeimg(self):
+		name, extension = os.path.splitext(self.upload.name)
+		if extension == '.pdf':
+			return 'file-pdf-o'
+		if extension == '.zip':
+			return 'file-archive-o'
+		return 'file-o'
+
+	def filename(self):
+		return os.path.basename(self.upload.name)
 	

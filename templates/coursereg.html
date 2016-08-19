@@ -3,20 +3,32 @@
 {% block title %}
 {{ u.title }}
 {% endblock %}
+{% block header %}
+ <h1>
+        {{ u.title }}
+        <small>Registration</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Course Registration</li>
+        <li class="active">{{ u.title }}</li>
+      </ol>
+{% endblock %}
 
 {% block content %}
 <div style="align:center; text-align: center">
-<h2>{{ u.title }}</h2><br>
 <h4>{{ u.desc }}</h4>
 <img src = "{{ MEDIA_URL }}{{ u.image }}">
 <h4><strong>Mentors</strong></h4>
 {% for k in u.mentorcourse.all %}
 <h4>{{ k.mentor.profile.full_name }}</h4>
-              {% endfor %}
+{% endfor %}
+
               <a href="/courses/"><button type="button" class="btn btn-default pull-left"><i class="fa fa-arrow-left"></i> Back</button></a>
               <form method = "post">
               {% csrf_token %}
               {% if reg == True %}
+              <a href="/course/{{ u.code }}"><button type="button" class="btn btn-primary">Go to course page</button></a>
               <input type="submit" class="btn btn-danger pull-right" name = "deregister" value = "Deregister">
               {% else %}
               <input type="submit" class="btn btn-success pull-right" name = "register" value = "Register">
